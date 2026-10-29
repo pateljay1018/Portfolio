@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executive Software & Systems Engineering Portfolio</title>
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External Stylesheet with Cache Busting -->
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+
+  <!-- Studio Executive Background with Architectural Grid -->
+  <div class="ambient-canvas">
+    <div class="architectural-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Floating Apple Pill Navbar with Light/Dark Toggle -->
+  <header class="nav-wrapper">
+    <nav class="glass-nav">
+      <a href="#home" class="nav-link active">Overview</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Case Studies</a>
+      <a href="#contact" class="nav-link">Hire Me</a>
+      
+      <div class="nav-divider"></div>
+      
+      <!-- Light / Dark Mode Toggle Button -->
+      <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Mode" title="Switch Light / Dark Appearance">
+        <i data-lucide="sun" class="icon-sun" size="17"></i>
+        <i data-lucide="moon" class="icon-moon" size="17"></i>
+        <span id="themeLabel">Light</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="container" id="home">
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="floating-chip chip-left">
+        <i data-lucide="shield-check" size="16" class="accent-icon"></i>
+        <span>Production-Ready Architecture</span>
+      </div>
+      <div class="floating-chip chip-right">
+        <i data-lucide="cpu" size="16" class="accent-icon"></i>
+        <span>3D WebGL & Logic Simulation</span>
+      </div>
+      <div class="floating-chip chip-bottom-left">
+        <i data-lucide="database" size="16" class="accent-icon"></i>
+        <span>3NF & Vector Database Systems</span>
+      </div>
+
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Accepting Client Projects & Technical Consulting</span>
+      </div>
+
+      <h1>High-impact web systems.<br />Engineered to convert.</h1>
+      <p>
+        I design and build custom web applications, interactive 3D product experiences, 
+        and normalized database architectures that turn complex ideas into flagship products.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-glass btn-primary">
+          <span>Book a Free Consultation</span>
+          <i data-lucide="arrow-up-right" size="18"></i>
+        </a>
+        <a href="#projects" class="btn-glass btn-secondary">
+          <i data-lucide="layers" size="18"></i>
+          <span>Click Any Project to Inspect</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CLIENT TRUST METRICS BAR -->
+    <section class="metrics-bar">
+      <div class="glass-panel metric-item float-1 tilt-card">
+        <div class="metric-value">100%</div>
+        <div class="metric-label">Responsive & Mobile-First Delivery</div>
+      </div>
+      <div class="glass-panel metric-item float-2 tilt-card">
+        <div class="metric-value">&lt; 1s</div>
+        <div class="metric-label">Zero-Bloat Page Load Performance</div>
+      </div>
+      <div class="glass-panel metric-item float-3 tilt-card">
+        <div class="metric-value">End-to-End</div>
+        <div class="metric-label">UI/UX Design to 3NF Database Deployment</div>
+      </div>
+    </section>
+
+    <!-- SERVICES FOR CLIENTS -->
+    <div id="services" class="section-header">
+      <div>
+        <div class="section-eyebrow">What I Deliver</div>
+        <h2 class="section-title">Client Solutions & Capabilities</h2>
+      </div>
+    </div>
+
+    <section class="bento-grid">
+      <div class="glass-panel bento-card span-7 float-1 tilt-card">
+        <div>
+          <div class="card-icon">
+            <i data-lucide="layout" size="20"></i>
+          </div>
+          <h3>Custom Web Applications & Interactive Dashboards</h3>
+          <p>
+            Bespoke, glassmorphic business websites, offline-capable web portals, and 3D hardware/product 
+            visualizers engineered from scratch for speed and visual authority.
+          </p>
+        </div>
+        <div class="tech-cluster">
+          <span class="tech-pill">HTML5 / CSS3</span>
+          <span class="tech-pill">JavaScript (ES6+)</span>
+          <span class="tech-pill">Three.js 3D Web</span>
+          <span class="tech-pill">Tailwind CSS</span>
+        </div>
+      </div>
+
+      <div class="glass-panel bento-card span-5 float-2 tilt-card">
+        <div>
+          <div class="card-icon">
+            <i data-lucide="database" size="20"></i>
+          </div>
+          <h3>Database & Algorithmic Architecture</h3>
+          <p>
+            Relational database schemas up to 3NF synthesis, intelligent vector similarity search, 
+            and high-efficiency C++/Python algorithmic backends.
+          </p>
+        </div>
+        <div class="tech-cluster">
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">pgvector</span>
+          <span class="tech-pill">3NF Synthesis</span>
+          <span class="tech-pill">C++ / Python</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED CASE STUDIES (CLICKABLE FOR MODAL) -->
+    <div id="projects" class="section-header">
+      <div>
+        <div class="section-eyebrow">Interactive Case Studies</div>
+        <h2 class="section-title">Featured Builds (Click Card for Schematics)</h2>
+      </div>
+    </div>
+
+    <section class="bento-grid">
+      
+      <!-- Project 1: 3D Circuit & 74LS138 Schematic -->
+      <article class="glass-panel project-card span-6 float-1 tilt-card" onclick="openProjectModal('circuit')">
+        <div>
+          <div class="project-top">
+            <span class="project-badge">3D WebGL & Logic Schematic</span>
+            <div class="project-links">
+              <span class="preview-hint"><i data-lucide="maximize-2" size="14"></i> View Schematic</span>
+            </div>
+          </div>
+          <h3>3D Digital Circuit Studio & 74LS138 Adder</h3>
+          <p>
+            Interactive 3D virtual breadboard simulator in Three.js paired with a verified 3-bit full adder 
+            implementation using a 3-to-8 line decoder IC (74LS138) and OR-gate minterm synthesis.
+          </p>
+        </div>
+        <div class="tech-cluster">
+          <span class="tech-pill">Three.js</span>
+          <span class="tech-pill">CircuitVerse</span>
+          <span class="tech-pill">74LS138 Decoder</span>
+          <span class="tech-pill">Tailwind CSS</span>
+        </div>
+      </article>
+
+      <!-- Project 2: Anchor + 3NF Synthesis Architecture -->
+      <article class="glass-panel project-card span-6 float-2 tilt-card" onclick="openProjectModal('anchor')">
+        <div>
+          <div class="project-top">
+            <span class="project-badge">DBMS & 3NF Architecture</span>
+            <div class="project-links">
+              <span class="preview-hint"><i data-lucide="maximize-2" size="14"></i> View Architecture</span>
+            </div>
+          </div>
+          <h3>Anchor — Matching Engine & 3NF Database</h3>
+          <p>
+            Candidate-matching platform combining PostgreSQL, <code>pgvector</code> cosine similarity, 
+            Deferred Acceptance stability, and lossless, dependency-preserving 3NF schema synthesis.
+          </p>
+        </div>
+        <div class="tech-cluster">
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">pgvector</span>
+          <span class="tech-pill">3NF Synthesis</span>
+          <span class="tech-pill">Gale-Shapley</span>
+        </div>
+      </article>
+
+      <!-- Project 3: TT Workspace -->
+      <article class="glass-panel project-card span-6 float-3 tilt-card" onclick="openProjectModal('workspace')">
+        <div>
+          <div class="project-top">
+            <span class="project-badge">SaaS Operations Portal</span>
+            <div class="project-links">
+              <span class="preview-hint"><i data-lucide="maximize-2" size="14"></i> View UI Preview</span>
+            </div>
+          </div>
+          <h3>TT Workspace — All-in-One Academic & Ops OS</h3>
+          <p>
+            Mobile-first glassmorphic web application featuring color-coded timetable blocks, attendance 
+            analytics, automated SGPA computation, and offline PDF storage.
+          </p>
+        </div>
+        <div class="tech-cluster">
+          <span class="tech-pill">Responsive Drawer UI</span>
+          <span class="tech-pill">Vanilla JS</span>
+          <span class="tech-pill">Offline LocalStorage</span>
+        </div>
+      </article>
+
+      <!-- Project 4: Smart-Mandi -->
+      <article class="glass-panel project-card span-6 float-4 tilt-card" onclick="openProjectModal('mandi')">
+        <div>
+          <div class="project-top">
+            <span class="project-badge">Commercial IoT & Tablet UI</span>
+            <div class="project-links">
+              <span class="preview-hint"><i data-lucide="maximize-2" size="14"></i> View System Diagram</span>
+            </div>
+          </div>
+          <h3>Smart-Mandi Modular Retail System</h3>
+          <p>
+            Solar-powered micro-refrigeration pushcart architecture integrated with a real-time tablet 
+            inventory dashboard to modernize supply-chain freshness for commercial vendors.
+          </p>
+        </div>
+        <div class="tech-cluster">
+          <span class="tech-pill">Solar Micro-Grid</span>
+          <span class="tech-pill">Tablet UI/UX</span>
+          <span class="tech-pill">Relational Inventory</span>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- CLIENT CONVERSION CTA -->
+    <section id="contact" class="glass-panel contact-panel float-1">
+      <div class="section-eyebrow">Ready to Start?</div>
+      <h2>Let’s turn your idea into a flagship product.</h2>
+      <p>
+        Need a custom website, interactive 3D showcase, or full-stack web application? 
+        Send a message and get a clear project roadmap and quote within 24 hours.
+      </p>
+      <div class="hero-actions">
+        <a href="mailto:your.email@example.com" class="btn-glass btn-primary">
+          <i data-lucide="mail" size="18"></i>
+          <span>Request a Free Quote</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="btn-glass btn-secondary">
+          <i data-lucide="linkedin" size="18"></i>
+          <span>Message on LinkedIn</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Executive Liquid Glass Architecture • Click any project card for schematics • © 2026</p>
+    </footer>
+
+  </main>
+
+  <!-- =========================================================
+       APPLE VISION-OS GLASSMORPHIC MODAL POPUP (SCHEMATICS/SLIDES)
+       ========================================================= -->
+  <div id="projectModal" class="modal-backdrop" onclick="closeModalOnBackdrop(event)">
+    <div class="glass-panel modal-window">
+      
+      <!-- Modal Top Header -->
+      <div class="modal-header">
+        <div>
+          <span id="modalBadge" class="project-badge">System Architecture</span>
+          <h2 id="modalTitle">Project Title</h2>
+        </div>
+        <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close Modal">
+          <i data-lucide="x" size="20"></i>
+        </button>
+      </div>
+
+      <!-- Interactive Schematic / Slide Visual Container -->
+      <div id="modalDiagram" class="modal-diagram-box">
+        <!-- Populated dynamically via JS with crisp SVG schematics/slides -->
+      </div>
+
+      <!-- Modal Details & Engineering Breakdown -->
+      <div class="modal-body">
+        <p id="modalDesc" class="modal-description"></p>
+        
+        <div class="modal-highlights">
+          <h4>Engineering & Architecture Highlights</h4>
+          <ul id="modalBullets"></ul>
+        </div>
+
+        <div class="modal-footer">
+          <div id="modalTags" class="tech-cluster" style="margin-top:0;"></div>
+          <div class="modal-actions">
+            <a id="modalLiveLink" href="#contact" onclick="closeProjectModal()" class="btn-glass btn-primary btn-sm">
+              <span>Request Similar Build</span>
+              <i data-lucide="arrow-up-right" size="16"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================
+       PORTFOLIO INTERACTION, MODAL DATA & THEME ENGINE
+       ========================================================= -->
+  <script>
+    lucide.createIcons();
+
+    /* 1. LIGHT / DARK THEME TOGGLE ENGINE */
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const themeLabel = document.getElementById('themeLabel');
+    const htmlEl = document.documentElement;
+
+    // Check saved preference
+    const savedTheme = localStorage.getItem('portfolio_theme') || 'dark';
+    applyTheme(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = htmlEl.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      localStorage.setItem('portfolio_theme', next);
+    });
+
+    function applyTheme(theme) {
+      htmlEl.setAttribute('data-theme', theme);
+      themeLabel.textContent = theme === 'dark' ? 'Light' : 'Dark';
+    }
+
+    /* 2. PROJECT MODAL DATA (WITH BUILT-IN SVG SCHEMATICS & SLIDES) */
+    const projectData = {
+      circuit: {
+        badge: "3D WebGL & Digital Logic Schematic",
+        title: "3D Digital Circuit Builder & 74LS138 Full Adder",
+        desc: "Combines a browser-based Three.js 3D interactive breadboard with a verified combinational logic schematic implementing a 3-bit Full Adder using a 74LS138 3-to-8 line decoder and active-low minterm synthesis.",
+        bullets: [
+          "Sum Output Equation: Σm(1, 2, 4, 7) synthesized from active-low decoder outputs using NAND/OR logic.",
+          "Carry-Out Equation: C_out = Σm(3, 5, 6, 7) verified via truth-table & Karnaugh map minimization.",
+          "Interactive Three.js spatial viewport allowing real-time IC pin wiring, resistor placement, and LED state feedback."
+        ],
+        tags: ["Three.js", "74LS138 Decoder", "CircuitVerse", "Digital Logic", "Tailwind CSS"],
+        diagram: `
+          <svg viewBox="0 0 700 250" class="schematic-svg">
+            <rect width="700" height="250" rx="14" fill="rgba(15,23,42,0.55)"/>
+            <!-- Inputs A, B, Cin -->
+            <text x="35" y="65" fill="#38bdf8" font-family="JetBrains Mono" font-size="13">A (MSB)</text>
+            <text x="35" y="125" fill="#38bdf8" font-family="JetBrains Mono" font-size="13">B</text>
+            <text x="35" y="185" fill="#38bdf8" font-family="JetBrains Mono" font-size="13">C_in (LSB)</text>
+            <line x1="115" y1="60" x2="210" y2="60" stroke="#38bdf8" stroke-width="2.5"/>
+            <line x1="115" y1="120" x2="210" y2="120" stroke="#38bdf8" stroke-width="2.5"/>
+            <line x1="115" y1="180" x2="210" y2="180" stroke="#38bdf8" stroke-width="2.5"/>
+            <!-- 74LS138 IC Block -->
+            <rect x="210" y="30" width="170" height="190" rx="10" fill="rgba(56,189,248,0.12)" stroke="#38bdf8" stroke-width="2"/>
+            <text x="242" y="115" fill="#f8fafc" font-family="Inter" font-weight="600" font-size="15">74LS138 IC</text>
+            <text x="235" y="138" fill="#94a3b8" font-family="JetBrains Mono" font-size="11">3-to-8 Line Decoder</text>
+            <!-- Minterm Bus Lines -->
+            <line x1="380" y1="75" x2="490" y2="75" stroke="#a855f7" stroke-width="2" stroke-dasharray="4"/>
+            <line x1="380" y1="165" x2="490" y2="165" stroke="#10b981" stroke-width="2" stroke-dasharray="4"/>
+            <!-- OR Gate Nodes -->
+            <rect x="490" y="48" width="165" height="54" rx="10" fill="rgba(168,85,247,0.18)" stroke="#a855f7" stroke-width="1.8"/>
+            <text x="508" y="73" fill="#f8fafc" font-family="JetBrains Mono" font-size="12">SUM = Σm(1,2,4,7)</text>
+            <text x="508" y="91" fill="#cbd5e1" font-family="Inter" font-size="11">OR / NAND Minterm Gate</text>
+            <rect x="490" y="138" width="165" height="54" rx="10" fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1.8"/>
+            <text x="508" y="163" fill="#f8fafc" font-family="JetBrains Mono" font-size="12">Cout = Σm(3,5,6,7)</text>
+            <text x="508" y="181" fill="#cbd5e1" font-family="Inter" font-size="11">Carry-Out Logic Stage</text>
+          </svg>
+        `
+      },
+      anchor: {
+        badge: "3NF Synthesis & Vector DBMS",
+        title: "Anchor — Candidate Matching & 3NF Database Pipeline",
+        desc: "Enterprise database architecture combining canonical-cover 3NF schema synthesis with PostgreSQL pgvector embeddings and the candidate-proposing Deferred Acceptance algorithm.",
+        bullets: [
+          "3NF Synthesis Pipeline: Computes minimal canonical cover (Fc), creates relations per functional dependency, and guarantees lossless join via candidate key preservation.",
+          "Hybrid Matching: Combines high-dimensional pgvector cosine similarity with Gale-Shapley stable matching.",
+          "Eliminates update/deletion anomalies while maintaining sub-50ms query execution."
+        ],
+        tags: ["PostgreSQL", "pgvector", "3NF Synthesis", "Functional Dependencies", "Gale-Shapley"],
+        diagram: `
+          <svg viewBox="0 0 700 250" class="schematic-svg">
+            <rect width="700" height="250" rx="14" fill="rgba(15,23,42,0.55)"/>
+            <!-- Step 1 -->
+            <rect x="28" y="45" width="185" height="160" rx="12" fill="rgba(56,189,248,0.12)" stroke="#38bdf8" stroke-width="1.8"/>
+            <text x="45" y="78" fill="#38bdf8" font-family="JetBrains Mono" font-size="12">STEP 1: 3NF SYNTHESIS</text>
+            <text x="45" y="105" fill="#f8fafc" font-family="Inter" font-size="12">• Minimal Cover (Fc)</text>
+            <text x="45" y="130" fill="#f8fafc" font-family="Inter" font-size="12">• FD Relation Grouping</text>
+            <text x="45" y="155" fill="#f8fafc" font-family="Inter" font-size="12">• Candidate Key Check</text>
+            <text x="45" y="180" fill="#94a3b8" font-family="JetBrains Mono" font-size="11">Lossless & Dep-Preserving</text>
+            <!-- Arrow 1 -->
+            <line x1="213" y1="125" x2="255" y2="125" stroke="#94a3b8" stroke-width="2"/>
+            <!-- Step 2 -->
+            <rect x="255" y="45" width="190" height="160" rx="12" fill="rgba(168,85,247,0.14)" stroke="#a855f7" stroke-width="1.8"/>
+            <text x="272" y="78" fill="#c084fc" font-family="JetBrains Mono" font-size="12">STEP 2: PGVECTOR DB</text>
+            <text x="272" y="105" fill="#f8fafc" font-family="Inter" font-size="12">• 1536-d Embeddings</text>
+            <text x="272" y="130" fill="#f8fafc" font-family="Inter" font-size="12">• HNSW Index Lookup</text>
+            <text x="272" y="155" fill="#f8fafc" font-family="Inter" font-size="12">• Cosine Similarity Rank</text>
+            <text x="272" y="180" fill="#94a3b8" font-family="JetBrains Mono" font-size="11">PostgreSQL Engine</text>
+            <!-- Arrow 2 -->
+            <line x1="445" y1="125" x2="485" y2="125" stroke="#94a3b8" stroke-width="2"/>
+            <!-- Step 3 -->
+            <rect x="485" y="45" width="185" height="160" rx="12" fill="rgba(16,185,129,0.14)" stroke="#10b981" stroke-width="1.8"/>
+            <text x="502" y="78" fill="#34d399" font-family="JetBrains Mono" font-size="12">STEP 3: STABLE MATCH</text>
+            <text x="502" y="105" fill="#f8fafc" font-family="Inter" font-size="12">• Candidate-Proposing</text>
+            <text x="502" y="130" fill="#f8fafc" font-family="Inter" font-size="12">• Deferred Acceptance</text>
+            <text x="502" y="155" fill="#f8fafc" font-family="Inter" font-size="12">• Pareto-Optimal Pairs</text>
+            <text x="502" y="180" fill="#94a3b8" font-family="JetBrains Mono" font-size="11">Zero Blocking Pairs</text>
+          </svg>
+        `
+      },
+      workspace: {
+        badge: "Glassmorphic SaaS Portal",
+        title: "TT Workspace — Mobile-First Academic & Schedule OS",
+        desc: "Custom-built productivity web application featuring a Minimalist Executive theme, color-coded timetable blocks, real-time attendance tracking, SGPA calculators, and offline document caching.",
+        bullets: [
+          "Engineered with mobile drawer navigation and responsive CSS Grid timetable blocks.",
+          "Instant client-side SGPA & attendance threshold computation with persistent LocalStorage state.",
+          "Zero external framework bloat—loads instantaneously on mobile and desktop browsers."
+        ],
+        tags: ["HTML5 / CSS3", "Vanilla JS", "LocalStorage API", "Glassmorphism", "Mobile Drawer UI"],
+        diagram: `
+          <svg viewBox="0 0 700 250" class="schematic-svg">
+            <rect width="700" height="250" rx="14" fill="rgba(15,23,42,0.55)"/>
+            <!-- Sidebar Drawer Mockup -->
+            <rect x="30" y="30" width="150" height="190" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)"/>
+            <text x="48" y="62" fill="#f8fafc" font-family="Inter" font-weight="600" font-size="13">TT Workspace</text>
+            <rect x="45" y="80" width="120" height="24" rx="6" fill="rgba(56,189,248,0.2)"/>
+            <text x="55" y="96" fill="#38bdf8" font-family="Inter" font-size="11">Timetable Grid</text>
+            <text x="55" y="128" fill="#94a3b8" font-family="Inter" font-size="11">SGPA Calculator</text>
+            <text x="55" y="156" fill="#94a3b8" font-family="Inter" font-size="11">Attendance Tracker</text>
+            <text x="55" y="184" fill="#94a3b8" font-family="Inter" font-size="11">Local PDF Vault</text>
+            <!-- Main Dashboard Area -->
+            <rect x="200" y="30" width="470" height="85" rx="10" fill="rgba(56,189,248,0.1)" stroke="#38bdf8"/>
+            <text x="220" y="62" fill="#f8fafc" font-family="Inter" font-weight="600" font-size="14">Live Schedule & Exam Countdown</text>
+            <text x="220" y="88" fill="#94a3b8" font-family="JetBrains Mono" font-size="12">DSA • DBMS • Digital Fundamentals • Attendance: 88.4%</text>
+            <rect x="200" y="130" width="225" height="90" rx="10" fill="rgba(16,185,129,0.12)" stroke="#10b981"/>
+            <text x="220" y="165" fill="#34d399" font-family="JetBrains Mono" font-size="13">SGPA Engine: 9.14</text>
+            <text x="220" y="190" fill="#cbd5e1" font-family="Inter" font-size="11">Real-time Credit Weighted</text>
+            <rect x="445" y="130" width="225" height="90" rx="10" fill="rgba(168,85,247,0.12)" stroke="#a855f7"/>
+            <text x="465" y="165" fill="#c084fc" font-family="JetBrains Mono" font-size="13">Offline-First Sync</text>
+            <text x="465" y="190" fill="#cbd5e1" font-family="Inter" font-size="11">Instant Cache Versioning</text>
+          </svg>
+        `
+      },
+      mandi: {
+        badge: "AgriTech & IoT System Architecture",
+        title: "Smart-Mandi — Solar Micro-Refrigerated Retail Cart",
+        desc: "Modular solar-powered pushcart concept equipped with dual-zone micro-refrigeration and an integrated tablet point-of-sale & freshness telemetry UI for produce vendors.",
+        bullets: [
+          "Solar roof canopy feeding a LiFePO4 battery bank for continuous off-grid Peltier/compressor cooling.",
+          "Relational inventory model tracking batch shelf-life, dynamic pricing, and digital QR payments.",
+          "Designed to drastically cut post-harvest street vendor spoilage while boosting daily vendor margins."
+        ],
+        tags: ["Solar Micro-Grid", "IoT Telemetry", "Tablet UI/UX", "Relational Inventory"],
+        diagram: `
+          <svg viewBox="0 0 700 250" class="schematic-svg">
+            <rect width="700" height="250" rx="14" fill="rgba(15,23,42,0.55)"/>
+            <rect x="35" y="45" width="185" height="160" rx="12" fill="rgba(251,191,36,0.12)" stroke="#fbbf24" stroke-width="1.8"/>
+            <text x="52" y="80" fill="#fbbf24" font-family="JetBrains Mono" font-size="12">SOLAR CANOPY</text>
+            <text x="52" y="110" fill="#f8fafc" font-family="Inter" font-size="12">• 300W Monocrystalline</text>
+            <text x="52" y="135" fill="#f8fafc" font-family="Inter" font-size="12">• MPPT Charge Ctrl</text>
+            <text x="52" y="160" fill="#f8fafc" font-family="Inter" font-size="12">• LiFePO4 Battery Pack</text>
+            <line x1="220" y1="125" x2="260" y2="125" stroke="#94a3b8" stroke-width="2"/>
+            <rect x="260" y="45" width="185" height="160" rx="12" fill="rgba(56,189,248,0.12)" stroke="#38bdf8" stroke-width="1.8"/>
+            <text x="278" y="80" fill="#38bdf8" font-family="JetBrains Mono" font-size="12">MICRO-COOLING BAY</text>
+            <text x="278" y="110" fill="#f8fafc" font-family="Inter" font-size="12">• Modular Cold Crates</text>
+            <text x="278" y="135" fill="#f8fafc" font-family="Inter" font-size="12">• Temp/Humidity Sensors</text>
+            <text x="278" y="160" fill="#f8fafc" font-family="Inter" font-size="12">• +4°C to +12°C Zones</text>
+            <line x1="445" y1="125" x2="485" y2="125" stroke="#94a3b8" stroke-width="2"/>
+            <rect x="485" y="45" width="180" height="160" rx="12" fill="rgba(16,185,129,0.12)" stroke="#10b981" stroke-width="1.8"/>
+            <text x="502" y="80" fill="#34d399" font-family="JetBrains Mono" font-size="12">SMART TABLET UI</text>
+            <text x="502" y="110" fill="#f8fafc" font-family="Inter" font-size="12">• Live Stock & Expiry</text>
+            <text x="502" y="135" fill="#f8fafc" font-family="Inter" font-size="12">• UPI QR Billing</text>
+            <text x="502" y="160" fill="#f8fafc" font-family="Inter" font-size="12">• Mandi Price Sync</text>
+          </svg>
+        `
+      }
+    };
+
+    const modalEl = document.getElementById('projectModal');
+
+    function openProjectModal(projectKey) {
+      const data = projectData[projectKey];
+      if (!data) return;
+
+      document.getElementById('modalBadge').textContent = data.badge;
+      document.getElementById('modalTitle').textContent = data.title;
+      document.getElementById('modalDesc').textContent = data.desc;
+      document.getElementById('modalDiagram').innerHTML = data.diagram;
+
+      const bulletsContainer = document.getElementById('modalBullets');
+      bulletsContainer.innerHTML = data.bullets.map(b => `<li>${b}</li>`).join('');
+
+      const tagsContainer = document.getElementById('modalTags');
+      tagsContainer.innerHTML = data.tags.map(t => `<span class="tech-pill">${t}</span>`).join('');
+
+      modalEl.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeProjectModal() {
+      modalEl.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnBackdrop(event) {
+      if (event.target === modalEl) {
+        closeProjectModal();
+      }
+    }
+
+    // Close modal with Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalEl.classList.contains('open')) {
+        closeProjectModal();
+      }
+    });
+
+    /* 3. APPLE VISION-OS CURSOR GLARE & 3D TILT */
+    const cards = document.querySelectorAll('.tilt-card');
+    cards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -4;
+        const rotateY = ((x - centerX) / centerX) * 4;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>
